@@ -13,7 +13,7 @@ app.use(express.static('./static'));
 
 app.get('/el-al', (req, res) => res.sendFile(path.join(__dirname, 'static', 'el-al', 'index.html')));
 app.get('/blue', (req, res) => res.sendFile(path.join(__dirname, 'static', 'blue', 'index.html')));
-app.get('/beauty-care', (req, res) => res.sendFile(path.join(__dirname, 'static', 'blue', 'form.html')));
+app.get('/beauty-care', (req, res) => res.sendFile(path.join(__dirname, 'static', 'beauty-care', 'form.html')));
 
 
 
