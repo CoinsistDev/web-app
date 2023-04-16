@@ -1,0 +1,63 @@
+body{
+  text-align:center;
+  margin: 5px 1px;
+  background-image: url("https://blue-il.co.il/wp-content/uploads/2021/05/Home-H1-BG-clean.png");
+  background-size: 120%;
+}
+
+
+.logo{
+  margin-top: 30px;
+}
+
+iframe{
+  height: 450px;
+  width: 450px;
+  border: none;
+}
+
+h2{
+font-family: 'Rubik', sans-serif;
+margin: 0 50% ;
+}
+
+.titel{
+
+margin: 1.5%;
+font-family: 'Rubik', sans-serif;
+color: white;
+white-space: nowrap;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+  body{
+    background-size: 450%;
+  }
+
+.middel{
+  margin: 20% 0;
+}
+
+h2{
+margin-right: 50%;
+}
+
+iframe{
+margin-right: 380px;
+  height: 650px;
+  width: 600px;
+  border: none;
+  zoom: 0.75;
+-moz-transform: scale(1.5);
+-moz-transform-origin: 0 0;
+-o-transform: scale(1.5);
+-o-transform-origin: 0 0;
+-webkit-transform: scale(1.75);
+-webkit-transform-origin: 0 0;
+}
+
+
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.">
+ <link rel="stylesheet" href="./css/base.css">
+ <link rel="stylesheet" href="./css/select.css">
+ <link rel="stylesheet" href="./css/input.css">
+ <link rel="stylesheet" href="./css/pop-up.css">
+ <link rel="shortcut icon" href="./imgs/beuty_logo.jpg" type="image/x-icon">
+ <title>Beauty Care Form </title>
+</head>
+<body>
+
+<template>
+
+ <div class="form rtl">
+  <div class="img-title-wrap">
+   
+ <img src="./imgs/logo-title.jpeg" alt="" class="img-title">
+
+ </div>
+  <div class="form-body" data-ref="body">
+   <div class="form-btn-wrapper" data-ref="sendBtnWrap">
+    <div class="form-btn" data-ref="sendBtn"><span>Send</span></div>
+   </div>
+  </div>
+ </div>
+
+ <div class="input-wrapper rtl">
+  <label class="input-title" data-ref="titleElem"></label>
+  <textarea type="text" data-ref="input" class="input" rows="2"></textarea>
+ </div>
+
+
+ <div class="pop-up-wrapper">
+  <div class="pop-up" data-ref="popUp">
+   <label class="pop-up-title" data-ref="titleElem"></label>
+   <div class="pop-up-message"> <p data-ref="messageElem"></p></div>
+   <div class="pop-up-btn-wrap">
+   <div class="pop-up-btn" data-ref="btn">Close</div>
+  </div>
+  </div>
+ </div>
+
+ <div class="select-wrapper">
+  <label class="input-title" data-ref="titleElem"></label>
+  <div class="select-input-wrap" data-ref="inputWrap">
+   <input class="select-input" data-ref="input" type="text" rows="1"/>
+   <svg class="arrows-icon" data-ref="arrowsIcon"><use href="#select-arrows"></use></svg>
+  </div>
+
+  
+  <ul class="select-list" data-ref="list" hidden></ul>
+ </div>
+
+ <li class="select-list-item"></li>
+
+
+</template> 
+
+<code hidden>
+ <svg  version="1.1" id="select-arrows" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve" style="fill:#242224">
+  <path d="M10,1L5,8h10L10,1z M10,19l5-7H5L10,19z"/>
+  </svg>
+</code>
+<script src="./js/fields.js"></script>
+<script src="./js/causes.js"></script>
+<script src="./js/branches-options.js"></script>
+<script src="./js/util.js"></script>
+<script src="./js/fetch.js"></script>
+<script src="./js/consts.js"></script>
+<script src="./js/component.js"></script>
+<script src="./js/select.js"></script>
+<script src="./js/popup.js"></script>
+<script src="./js/input.js"></script>
+<script src="./js/form.js"></script>
+
+<script src="./js/index.js"></script>
+</body>
+</html>

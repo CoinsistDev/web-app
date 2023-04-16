@@ -54,7 +54,7 @@ $(document).ready(function(){
         field7 : $("#flight-date").val()
       }
       $.ajax({
-        url: `api/send-form`,
+        url: `https://glassix.consist.co.il/el-al/api/send-form`,
         type: 'post',
         dataType: 'json',
         contentType: 'application/json',

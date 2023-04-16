@@ -1,0 +1,127 @@
+
+@font-face {
+ font-family:'lora' ;
+ src: url('../fonts/Lora-VariableFont_wght.ttf');
+}
+
+:root{
+ --form-font-family:Arial;
+ --form-max-width:400px;
+ --el-al-color:	hsl(208, 56%, 41%);
+ --el-al-border:1px solid 	hsl(208, 56%, 31%);
+ --input-width:85%;
+ --margin-left-form-child:20px;
+ --margin-bottom-form-child:15px;
+ --form-bg:#EEE;
+ --form-border-radius:40px;
+ --standard-line-height:26px;
+ --form-side-padding:30px;
+}
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing:border-box;
+
+}
+ul,ol{
+ list-style: none;
+}
+.rtl{
+ direction: rtl;
+}
+.form{
+ font-family: var(--form-font-family);
+ max-width: var(--form-max-width);
+ width: 100%;
+ background: var(--form-bg);
+ height: fit-content;
+ padding-bottom: 40px;
+padding-top: 10px;
+border-top-left-radius:var(--form-border-radius) ;
+border-bottom-right-radius:var(--form-border-radius) ;
+padding-left: var(--form-side-padding);
+
+
+}
+.img-title-wrap{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+transform: translateX(var(--margin-left-form-child));
+margin-bottom: var(--margin-bottom-form-child);
+}
+.img-title{
+ width: 30%;
+height: 70px; 
+ text-shadow: 8px -8px 30px #8e8e8e;
+}
+.form.rtl{
+ padding-left: 0;
+ padding-right: var(--form-side-padding);
+}
+.form-body{
+ 
+ width: 100%;
+}
+
+
+
+body{
+ display: flex;
+position: relative;
+flex-direction: column;
+ align-items: center;
+height: 100%;
+min-height: 100vh;
+ background:hsla(53, 12%, 65%, 0.78);
+
+ box-sizing: content-box;
+ padding-top: 20px;
+
+}
+
+.form-btn-wrapper{
+
+margin-top: 10px;
+
+}
+
+.form-btn{
+background:var(--el-al-color);
+
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+margin-left: 20px;
+width:  var(--input-width);
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+border-radius: 5px;
+cursor: pointer;
+border: var(--el-al-border);
+
+}
+
+.form-btn.err{
+ background: repeating-linear-gradient(45deg,grey 0px 2px, #333 3px 4px);
+ cursor:not-allowed ;
+}
+
+
+
+
+.x-btn{
+ cursor: pointer;
+ font-size: 1.2rem;
+ margin-left: auto;
+}
+
+@media screen and (max-width:340px){
+ .form-title{
+  font-size: 2rem;
+ }
+}
+
