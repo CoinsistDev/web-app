@@ -15,7 +15,7 @@
     "winston": "^3.8.2"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "nati_lusky",
