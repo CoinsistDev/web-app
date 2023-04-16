@@ -30,7 +30,7 @@ app.use((req, res, next) => {
     res.status(res.statusCode || 500);
     res.json({
       message: error.message,
-      stack: process.env.NODE_ENV !== 'production' ? error.stack : '',
+    //   stack: process.env.NODE_ENV !== 'production' ? error.stack : '',
     });
   });
 
