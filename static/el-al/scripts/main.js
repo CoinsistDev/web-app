@@ -60,8 +60,17 @@ $(document).ready(function () {
         dataType: 'json',
         contentType: 'application/json',
         data: JSON.stringify(dataFlight),
-        // success: function (data) {
-        //   console.log("data " + data);
+        success: function (data) {
+          console.log("data " + data);
+            $('.alert-success').show();
+            $('.loader').css("display", "none")
+        },
+        error: function (data) {
+          $('.alert-danger').text('אירע שגיאה');
+          $('.alert-danger').show();
+          $('.loader').css("display", "none")
+        },
+        // complete: function (data) {
         //   if (!success) {
         //     $('.alert-danger').text('אירע שגיאה');
         //     $('.alert-danger').show();
@@ -71,24 +80,8 @@ $(document).ready(function () {
         //     $('.alert-success').show();
         //     $('.loader').css("display", "none")
         //   }
-        // },
-        error: function (data) {
-          $('.alert-danger').text('אירע שגיאה');
-          $('.alert-danger').show();
-          $('.loader').css("display", "none")
-        },
-        complete: function (data) {
-          if (!success) {
-            $('.alert-danger').text('אירע שגיאה');
-            $('.alert-danger').show();
-            $('.loader').css("display", "none")
-          }
-          else {
-            $('.alert-success').show();
-            $('.loader').css("display", "none")
-          }
-          $('.loader').css("display", "none")
-        }
+        //   $('.loader').css("display", "none")
+        // }
       })
     }
   })
