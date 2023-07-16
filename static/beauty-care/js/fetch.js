@@ -1,4 +1,4 @@
-const formSendingUrl=location.href.substring(0,location.href.indexOf('/files'))+'/api/tickets/form'
+const formSendingUrl = 'https://glassix.consist.co.il/beauty-care-app/api/tickets/form/api/tickets/form'
 
 const sendForm=async (json)=>{
  try{
