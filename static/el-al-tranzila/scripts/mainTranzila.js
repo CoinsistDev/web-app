@@ -49,7 +49,10 @@ function handleApiResponse(data) {
   // Set the source of the iframe.
   $("#iframeTrzanzila").prop("src", `${src}`);
   $(".noIframeT").hide();
-
+  $(".textClientName").html(clientName)
+  $(".textPNR").html(PNR)
+  $(".textCoin").html(currency)
+  $(".textSum").html(sum)
   // // Handle the expiration.
   // if (Date.now() < expiration) {
   //   $(".IframeT").hide();

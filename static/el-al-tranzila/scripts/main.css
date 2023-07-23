@@ -187,6 +187,22 @@ select{
     text-align: center;
     margin-bottom: 40px;
 }
+.iframeInfoB4{
+    font-size: 16px;
+    color: #7A7A7A;
+    margin: auto;
+    width: 400px;
+    padding: 15px;
+}
+.iframeInfoB4Text{
+    width: 90%;
+    border-bottom: 1px grey solid;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#footerClass{
+    text-align: center;
+}
 /*************** select2 **************/
 .js-example-basic-single{
     direction: rtl !important;
@@ -215,6 +231,7 @@ select{
 .borderClass{
     border: 1px solid #ff0000 !important;
   }
+
 /****************datepicker*********************/
 
 #ui-datepicker-div .ui-datepicker-current {
