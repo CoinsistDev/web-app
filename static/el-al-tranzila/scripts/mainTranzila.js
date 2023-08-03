@@ -10,11 +10,6 @@ $(document).ready(function () {
     }
   });
 
-
-
-});
-
-
   // Send a GET request to the API.
   $.ajax({
     url: `https://glassix.consist.co.il/el-al/api/get-data/${ticketId}`,
@@ -32,6 +27,8 @@ $(document).ready(function () {
       $(".noIframeT").html("הדף כבר לא זמין, אנא דבר שוב עם הנציג").show();
     }
   });
+
+});
 
 function getTicketIdFromUrl() {
   // Split the URL by '/' and get the last part
