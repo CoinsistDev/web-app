@@ -1,24 +1,37 @@
 $(document).ready(function () {
+  $("#creatTicketForm").hide()
   // Get the ticketId from the URL.
   const ticketId = getTicketIdFromUrl();
-  
+
+  $("#submitbtn").click(function(){
+    if($("#approve").is(':checked')){
+      $("#iframe1").hide()
+      $("#creatTicketForm").show()
+    }
+  });
+
+
+
+});
+
+
   // Send a GET request to the API.
   $.ajax({
     url: `https://glassix.consist.co.il/el-al/api/get-data/${ticketId}`,
     type: "GET",
     success: function(data) {
       // The data from the API includes all necessary fields like clientName, PNR, etc.
-      handleApiResponse(data);
+      handleApiResponse(data)
+      $(".noIframeT").hide()
+      $(".IframeT").show()
     },
     error: function(err) {
       // Handle error.
       console.log(err);
-      $("#iframeTrzanzila").hide();
+      $(".IframeT").hide();
       $(".noIframeT").html("הדף כבר לא זמין, אנא דבר שוב עם הנציג").show();
     }
   });
-});
-
 
 function getTicketIdFromUrl() {
   // Split the URL by '/' and get the last part

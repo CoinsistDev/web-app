@@ -36,34 +36,55 @@
         <div class="container">           
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="Iframe-column" class="col-md-6">   
-                    <div><img src="./images/1651px-EL_AL_New_Logo.svg.png"></div>            
-                        <form id="creatTicketForm" class="form" action="" method="post">
+                    <div><img src="./images/1651px-EL_AL_New_Logo.svg.png"></div>
+                    <div id="iframe1">
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <div class="checkbox">
+                                    <br><a href="https://www.elal.com/heb/legal/ticket-cancellation" target="_blank" style="margin-right: -22px;"> מעבר לתקנון - חוק הגנת הצרכן</a><br>
+                                    <label>
+                                        <input type="checkbox" data-toggle="toggle" data-style="ios" id="approve" data-on="" data-off="">
+                                        אני מאשר/ת כי קראתי את התקנון
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group" style="text-align: center;">
+                                <input type="button" name="submit" class="btn btn-info btn-lg" value="אישור" id="submitbtn" >
+                            </div>
+                        </div>
+                    </div>            
+                    <form id="creatTicketForm" class="form" action="" method="post">
                             <div>
                                 <h3>מערכת לסליקת אשראי</h3>
                             </div>
-                            <div class="iframeInfoB4">
-                                <div class="iframeInfoB4Text">שם לקוח: <span class="textClientName"></span></div>
-                                <div class="iframeInfoB4Text">מספר PNR: <span class="textPNR"></span></div>
-                                <div class="iframeInfoB4Text">מטבע: <span class="textCoin"></span></div>
-                                <div class="iframeInfoB4Text">סכום: <span class="textSum"></span></div>
-                            </div>
-                            <div class="row IframeT">
-                                <div class="form-group col-12">
-                                    <iframe id="iframeTrzanzila" src = "https://direct.tranzila.com/consistelal/iframenew.php?sum=0.1&currency=1&cred_type=1&tranmode=V&lang=il&ticketId"></iframe>
+                            <div class="IframeT">
+                                <div class="row">
+                                    <div class="iframeInfoB4">
+                                        <div class="iframeInfoB4Text">שם לקוח: <span class="textClientName"></span></div>
+                                        <div class="iframeInfoB4Text">מספר PNR: <span class="textPNR"></span></div>
+                                        <div class="iframeInfoB4Text">מטבע: <span class="textCoin"></span></div>
+                                        <div class="iframeInfoB4Text">סכום: <span class="textSum"></span></div>
+                                    </div>
                                 </div>
-                                
+                                <div class="row">
+                                    <div class="form-group col-12">
+                                        <iframe id="iframeTrzanzila" src = "https://direct.tranzila.com/consistelal/iframenew.php?sum=0.1&currency=1&cred_type=1&tranmode=V&lang=il&ticketId"></iframe>
+                                    </div>
+                                </div>
                             </div>
                             <div class="row noIframeT">
-                                <div class="form-group col-12">הדף כבר לא זמין, אנא דבר שוב עם הנציג
-                                </div>
+                                <div class="form-group col-12" style="text-align: center;margin:auto">הדף כבר לא זמין, אנא דבר שוב עם הנציג</div>
                             </div>
-                            <div id="footerClass">טלפון - 039771111<br>
-                                מחלקת קשרי לקוחות, אל על נתיבי אוויר לישראל בע"מ
-                                <br>משרד ראשי, נתב"ג ת.ד. 41 מיקוד 7015001
-                                <br><a href="https://www.elal.com/heb/legal/ticket-cancellation" target="_blank"> מעבר לתקנון - חוק הגנת הצרכן</a>
-                            </div>
-                        </form>
+                           
+                    </form>
+                    <div id="footerClass">טלפון - 039771111<br>
+                        מחלקת קשרי לקוחות, אל על נתיבי אוויר לישראל בע"מ
+                        <br>משרד ראשי, נתב"ג ת.ד. 41 מיקוד 7015001
+                        <br><a href="https://www.elal.com/heb/legal/ticket-cancellation" target="_blank"> מעבר לתקנון - חוק הגנת הצרכן</a>
                     </div>
+                </div>
             </div>
         </div>
     </div>
