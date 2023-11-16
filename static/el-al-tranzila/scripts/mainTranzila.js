@@ -54,7 +54,7 @@ function handleApiResponse(data) {
   const tranmode = 'VK';
 
   // Create the source URL for the iframe.
-  const src = `https://direct.tranzila.com/consistelal/iframenew.php?nologo=1&clientName=${clientName}&PNR=${PNR}&expiration=${expiration}&userName=${userName}&sum=1&currency=${currency}&cred_type=${cred_type}&tranmode=${tranmode}&lang=il&ticketId=${ticketId}&departmentId=${departmentId}&tahles=${sum}`;
+  const src = `https://direct.tranzila.com/consistelal/iframenew.php?nologo=1&clientName=${clientName}&PNR=${PNR}&expiration=${expiration}&userName=${userName}&sum=1&currency=${currency}&cred_type=${cred_type}&tranmode=${tranmode}&lang=il&ticketId=${ticketId}&departmentId=${departmentId}&tahles=${sum}&hidesum=1`;
 
   // Set the source of the iframe.
   $("#iframeTrzanzila").prop("src", `${src}`);
