@@ -200,6 +200,7 @@ select{
     border-bottom: 1px grey solid;
     margin: auto;
     margin-bottom: 20px;
+    font-size: 20px !important;
 }
 #footerClass{
     text-align: center;
@@ -258,11 +259,6 @@ img{
 /*The container will also serve as the SKY*/
 
 *{ margin: 0; padding: 0;}
-
-body {
-	/*To hide the horizontal scroller appearing during the animation*/
-	/*overflow: hidden;*/
-}
 
 #clouds{
 	padding: 100px 0;
