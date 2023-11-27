@@ -185,6 +185,7 @@ select{
     font-size: 10px;
 }
 .noIframeT{
+    display: block;
     text-align: center;
     margin-bottom: 40px;
 }
