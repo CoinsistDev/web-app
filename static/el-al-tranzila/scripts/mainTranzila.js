@@ -19,12 +19,16 @@ $(document).ready(function () {
       handleApiResponse(data);
       $(".noIframeT").hide();
       $(".IframeT").show();
+      setTimeout(function() {
+        $(".noIframeT").show();
+        $(".IframeT").hide();
+      }, 900000); // 15 minutes = 15 * 60 * 1000 milliseconds
     },
     error: function (err) {
       // Handle error.
       console.log(err);
       $(".IframeT").hide();
-      $(".noIframeT").html("הדף כבר לא זמין, אנא דבר שוב עם הנציג").show();
+      $(".noIframeT").html("הדף כבר לא זמין, אנא פנה שוב לנציג").show();
     },
   });
 });
