@@ -11,27 +11,35 @@ $(document).ready(function () {
   });
 
   // Send a GET request to the API.
-  $.ajax({
-    url: `https://glassix.consist.co.il/el-al/api/get-data/${ticketId}`,
-    type: "GET",
-    success: function (data) {
-      // The data from the API includes all necessary fields like clientName, PNR, etc.
-      handleApiResponse(data);
-      $(".noIframeT").hide();
-      $(".IframeT").show();
-      setTimeout(function() {
-        $(".noIframeT").show();
+  let interval
+  function fetchData() {
+    $.ajax({
+      url: `https://glassix.consist.co.il/el-al/api/get-data/${ticketId}`,
+      type: "GET",
+      success: function (data) {
+        // The data from the API includes all necessary fields like clientName, PNR, etc.
+        handleApiResponse(data);
+        $(".noIframeT").hide();
+        $(".IframeT").show();
+        setTimeout(function() {
+          $(".noIframeT").show();
+          $(".IframeT").hide();
+        }, 900000); // 15 minutes = 15 * 60 * 1000 milliseconds
+      },
+      error: function (err) {
+        // Handle error.
+        console.log(err);
         $(".IframeT").hide();
-      }, 900000); // 15 minutes = 15 * 60 * 1000 milliseconds
-    },
-    error: function (err) {
-      // Handle error.
-      console.log(err);
-      $(".IframeT").hide();
-      $(".noIframeT").html("הדף כבר לא זמין, אנא פנה שוב לנציג").show();
-    },
-  });
+        $(".noIframeT").html("הדף כבר לא זמין, אנא פנה שוב לנציג").show();
+        clearInterval(interval);
+      },
+    });
+  }
+  fetchData()
+  interval = setInterval(fetchData, 60000); // check every 1 minute
 });
+
+
 
 function getTicketIdFromUrl() {
   // Split the URL by '/' and get the last part
