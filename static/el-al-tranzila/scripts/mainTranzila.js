@@ -36,7 +36,7 @@ $(document).ready(function () {
     });
   }
   fetchData()
-  interval = setInterval(fetchData, 60000); // check every 1 minute
+  interval = setInterval(fetchData, 480000); // check every 8 minutes
 });
 
 
