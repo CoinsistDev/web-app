@@ -33,6 +33,9 @@ h3{
     text-align: center;
     /*border-bottom: 2px solid #d80018 !important;*/
 }
+h4{
+    text-align: center; 
+}
   .content {
     position:relative;
     left: 0;
