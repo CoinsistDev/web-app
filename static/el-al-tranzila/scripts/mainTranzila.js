@@ -10,6 +10,29 @@ $(document).ready(function () {
     }
   });
 
+  
+function startCountdown(duration, display) {
+  var timer = duration, minutes, seconds;
+
+  // Updating the timer every second
+  var interval = setInterval(function () {
+      minutes = parseInt(timer / 60, 10);
+      seconds = parseInt(timer % 60, 10);
+
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      // Displaying the time
+      display.textContent = minutes + ":" + seconds;
+
+      // When the timer is over, clear the interval
+      if (--timer < 0) {
+          clearInterval(interval);
+          display.textContent = "תם הזמן";
+      }
+  }, 1000);
+}
+
   // Send a GET request to the API.
   let interval
   function fetchData() {
@@ -25,6 +48,9 @@ $(document).ready(function () {
           $(".noIframeT").show();
           $(".IframeT").hide();
         }, 900000); // 15 minutes = 15 * 60 * 1000 milliseconds
+        const timeInSeconds = 60 * 8 // 8 minutes in seconds
+        const display = document.querySelector('#time'); // Assuming you have an element with id 'time'
+        startCountdown(timeInSeconds, display)
       },
       error: function (err) {
         // Handle error.
@@ -87,3 +113,4 @@ function handleApiResponse(data) {
   //   $(".noIframeT").show();
   // }
 }
+
