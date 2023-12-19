@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $("#creatTicketForm").hide();
   // Get the ticketId from the URL.
-  const ticketId = getTicketIdFromUrl();
+  const { ticketId, token } = getTicketIdAndTokenFromUrl();
 
   $("#submitbtn").click(function () {
     if ($("#approve").is(":checked")) {
@@ -10,12 +10,13 @@ $(document).ready(function () {
     }
   });
 
-  
-function startCountdown(duration, display) {
-  var timer = duration, minutes, seconds;
+  function startCountdown(duration, display) {
+    var timer = duration,
+      minutes,
+      seconds;
 
-  // Updating the timer every second
-  var interval = setInterval(function () {
+    // Updating the timer every second
+    var interval = setInterval(function () {
       minutes = parseInt(timer / 60, 10);
       seconds = parseInt(timer % 60, 10);
 
@@ -27,30 +28,31 @@ function startCountdown(duration, display) {
 
       // When the timer is over, clear the interval
       if (--timer < 0) {
-          clearInterval(interval);
-          display.textContent = "תם הזמן";
+        clearInterval(interval);
+        display.textContent = "תם הזמן";
       }
-  }, 1000);
-}
+    }, 1000);
+  }
 
   // Send a GET request to the API.
-  let interval
+  let interval;
   function fetchData() {
     $.ajax({
       url: `https://glassix.consist.co.il/el-al/api/get-data/${ticketId}`,
+      headers: { Authorization: `Bearer ${token}` },
       type: "GET",
       success: function (data) {
         // The data from the API includes all necessary fields like clientName, PNR, etc.
         handleApiResponse(data);
         $(".noIframeT").hide();
         $(".IframeT").show();
-        setTimeout(function() {
+        setTimeout(function () {
           $(".noIframeT").show();
           $(".IframeT").hide();
         }, 900000); // 15 minutes = 15 * 60 * 1000 milliseconds
-        const timeInSeconds = 60 * 8 // 8 minutes in seconds
-        const display = document.querySelector('#time'); // Assuming you have an element with id 'time'
-        startCountdown(timeInSeconds, display)
+        const timeInSeconds = 60 * 8; // 8 minutes in seconds
+        const display = document.querySelector("#time"); // Assuming you have an element with id 'time'
+        startCountdown(timeInSeconds, display);
       },
       error: function (err) {
         // Handle error.
@@ -61,16 +63,23 @@ function startCountdown(duration, display) {
       },
     });
   }
-  fetchData()
+  fetchData();
   interval = setInterval(fetchData, 480000); // check every 8 minutes
 });
 
+function getTicketIdAndTokenFromUrl() {
+  // Extract the path and query parameters from the URL
+  const path = window.location.pathname;
+  const queryParams = new URLSearchParams(window.location.search);
 
+  // Extract the ticketId from the path
+  const pathParts = path.split("/");
+  const ticketId = pathParts[pathParts.length - 1];
 
-function getTicketIdFromUrl() {
-  // Split the URL by '/' and get the last part
-  const urlParts = window.location.pathname.split("/");
-  return urlParts[urlParts.length - 1];
+  // Extract the token from the query parameters
+  const token = queryParams.get("token");
+
+  return { ticketId, token };
 }
 
 const getCurrency = (currency) => {
@@ -113,4 +122,3 @@ function handleApiResponse(data) {
   //   $(".noIframeT").show();
   // }
 }
-
