@@ -21,10 +21,7 @@ app.get('/el-al-tranzila/*', (req, res) => res.sendFile(path.join(__dirname, 'st
 app.get('/blue', (req, res) => res.sendFile(path.join(__dirname, 'static', 'blue', 'index.html')));
 app.get('/beauty-care', (req, res) => res.sendFile(path.join(__dirname, 'static', 'beauty-care', 'form.html')));
 app.use(express.static('./static/kls'));
-app.get('/kls', (req, res) => res.sendFile(path.join(__dirname, 'static', 'kls', 'de/index.htm')));
-app.get('/kls1', (req, res) => res.sendFile(path.join(__dirname, 'static', 'de', 'index.htm')));
-app.get('/kls2', (req, res) => res.sendFile(path.join(__dirname, 'static', 'kls/de', 'index.htm')));
-
+app.get('/kls', (req, res) => res.sendFile(path.join(__dirname, 'static', 'kls/de', 'index.htm')));
 
 app.use((req, res, next) => {
     const error = new Error(`Not Found - ${req.originalUrl}`);
