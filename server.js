@@ -20,6 +20,8 @@ app.get('/el-al', (req, res) => res.sendFile(path.join(__dirname, 'static', 'el-
 app.get('/el-al-tranzila/*', (req, res) => res.sendFile(path.join(__dirname, 'static', 'el-al-tranzila', 'index.html')));
 app.get('/blue', (req, res) => res.sendFile(path.join(__dirname, 'static', 'blue', 'index.html')));
 app.get('/beauty-care', (req, res) => res.sendFile(path.join(__dirname, 'static', 'beauty-care', 'form.html')));
+app.get('/kls', (req, res) => res.sendFile(path.join(__dirname, 'static', 'kls/de', 'index.htm')));
+
 
 app.use((req, res, next) => {
     const error = new Error(`Not Found - ${req.originalUrl}`);
@@ -34,8 +36,6 @@ app.use((req, res, next) => {
     //   stack: process.env.NODE_ENV !== 'production' ? error.stack : '',
     });
   });
-
-
 
 const PORT = process.env.PORT || 3000
 

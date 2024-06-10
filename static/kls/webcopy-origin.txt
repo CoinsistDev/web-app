@@ -1,0 +1,244 @@
+Uri: https://blox-test.consist.co.il/comments/feed/
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\comments\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://blox-test.consist.co.il/de/
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\de\index.htm
+Content Type: text/html
+
+Uri: https://blox-test.consist.co.il/feed/
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/css/cform.css?ver=0.1.4
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-consist-forms\assets\css\cform.css
+Content Type: text/css
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/css/loader.css?ver=0.1.4
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-consist-forms\assets\css\loader.css
+Content Type: text/css
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/js/cform-script.js?ver=0.1.4
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-consist-forms\assets\js\cform-script.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/js/jquery.validate.js?ver=0.1.4
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-consist-forms\assets\js\jquery.validate.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/js/loader.js?ver=0.1.4
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-consist-forms\assets\js\loader.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/js/localization/messages_he.js?ver=0.1.4
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-consist-forms\assets\js\localization\messages_he.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/js/utils.js?ver=0.1.4
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-consist-forms\assets\js\utils.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-pro/assets/css/frontend-lite-rtl.min.css?ver=3.21.2
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-pro\assets\css\frontend-lite-rtl.min.css
+Content Type: text/css
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.21.2
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-pro\assets\js\elements-handlers.min.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.21.2
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-pro\assets\js\frontend.min.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.21.2
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-pro\assets\js\webpack-pro.runtime.min.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/css/frontend-lite-rtl.min.css?ver=3.21.5
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor\assets\css\frontend-lite-rtl.min.css
+Content Type: text/css
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.21.5
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor\assets\js\frontend-modules.min.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.21.5
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor\assets\js\frontend.min.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.21.5
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor\assets\js\webpack.runtime.min.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.29.0
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor\assets\lib\eicons\css\elementor-icons.min.css
+Content Type: text/css
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor\assets\lib\swiper\v8\css\swiper.min.css
+Content Type: text/css
+
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor\assets\lib\waypoints\waypoints.min.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-content/themes/astra/assets/css/minified/main.min-rtl.css?ver=4.6.14
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\themes\astra\assets\css\minified\main.min-rtl.css
+Content Type: text/css
+
+Uri: https://blox-test.consist.co.il/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.6.14
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\themes\astra\assets\js\minified\frontend.min.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-content/uploads/2024/05/doxi-black-e1715153960569.png
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\uploads\2024\05\doxi-black-e1715153960569.png
+Content Type: image/png
+
+Uri: https://blox-test.consist.co.il/wp-content/uploads/elementor/css/global.css?ver=1715268357
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\uploads\elementor\css\global.css
+Content Type: text/css
+
+Uri: https://blox-test.consist.co.il/wp-content/uploads/elementor/css/post-5174.css?ver=1716309300
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\uploads\elementor\css\post-5174.css
+Content Type: text/css
+
+Uri: https://blox-test.consist.co.il/wp-content/uploads/elementor/css/post-6.css?ver=1715264894
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\uploads\elementor\css\post-6.css
+Content Type: text/css
+
+Uri: https://blox-test.consist.co.il/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-includes\js\dist\hooks.min.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-includes\js\dist\i18n.min.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-includes\js\dist\vendor\regenerator-runtime.min.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-includes\js\dist\vendor\wp-polyfill-inert.min.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-includes\js\dist\vendor\wp-polyfill.min.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-includes\js\jquery\jquery-migrate.min.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-includes/js/jquery/jquery.min.js?ver=3.7.1
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-includes\js\jquery\jquery.min.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-includes\js\jquery\ui\core.min.js
+Content Type: application/javascript
+
+Uri: https://blox-test.consist.co.il/wp-json/
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-json\index.htm
+Content Type: application/json
+
+Uri: https://blox-test.consist.co.il/wp-json/oembed/1.0/embed?url=https:%2F%2Fblox-test.consist.co.il%2Fde%2F
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-json\oembed\1.0\embed
+Content Type: application/json
+
+Uri: https://blox-test.consist.co.il/wp-json/oembed/1.0/embed?url=https:%2F%2Fblox-test.consist.co.il%2Fde%2F&format=xml
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-json\oembed\1.0\embed-1
+Content Type: text/xml
+
+Uri: https://blox-test.consist.co.il/wp-json/wp/v2/pages/5174
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-json\wp\v2\pages\5174
+Content Type: application/json
+
+Uri: https://fonts.googleapis.com/css?family=Roboto:100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic|Roboto+Slab:100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=swap&subset=hebrew&ver=6.5.3
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\css
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOiCnqEu92Fr1Mu51QrEzAdKg.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\roboto\v30\KFOiCnqEu92Fr1Mu51QrEzAdKg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51S7ACc6CsE.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\roboto\v30\KFOjCnqEu92Fr1Mu51S7ACc6CsE.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TjASc6CsE.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\roboto\v30\KFOjCnqEu92Fr1Mu51TjASc6CsE.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TLBCc6CsE.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\roboto\v30\KFOjCnqEu92Fr1Mu51TLBCc6CsE.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic6CsE.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\roboto\v30\KFOjCnqEu92Fr1Mu51TzBic6CsE.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxIIzc.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\roboto\v30\KFOkCnqEu92Fr1MmgVxIIzc.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xIIzc.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\roboto\v30\KFOkCnqEu92Fr1Mu51xIIzc.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc9.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\roboto\v30\KFOlCnqEu92Fr1MmEU9fBBc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc9.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\roboto\v30\KFOlCnqEu92Fr1MmSU5fBBc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc9.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\roboto\v30\KFOlCnqEu92Fr1MmWUlfBBc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfBBc9.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\roboto\v30\KFOlCnqEu92Fr1MmYUtfBBc9.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\roboto\v30\KFOmCnqEu92Fr1Mu4mxP.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v34/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\robotoslab\v34\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v34/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Omb2Rm.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\robotoslab\v34\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Omb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v34/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\robotoslab\v34\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v34/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\robotoslab\v34\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v34/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\robotoslab\v34\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v34/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\robotoslab\v34\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v34/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\robotoslab\v34\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v34/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\robotoslab\v34\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v34/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\s\robotoslab\v34\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmb2Rm.ttf
+Content Type: font/ttf
+
