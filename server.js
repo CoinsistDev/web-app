@@ -23,9 +23,9 @@ app.get('/beauty-care', (req, res) => res.sendFile(path.join(__dirname, 'static'
 
 // app.use(express.static('./static/kls'));
 // app.get('/kls', (req, res) => res.sendFile(path.join(__dirname, 'static', 'kls/de', 'index.htm')));
-app.use(express.static(path.join(__dirname, 'static', 'kls')));
+//app.use(express.static(path.join(__dirname, 'static', 'kls')));
 app.get('/kls', (req, res) => {
-  res.sendFile(path.join(__dirname, 'static', 'kls', 'de', 'index.htm'));
+  res.sendFile(path.join(__dirname, 'static', 'kls', 'index.htm'));
 });
 
 app.use((req, res, next) => { 
