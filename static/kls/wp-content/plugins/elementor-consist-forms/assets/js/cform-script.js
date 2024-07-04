@@ -76,15 +76,16 @@
                 if (!advancedBtnClicked) {
                   console.log('DEBUG: Form submit success', data);
                   successActionHandler(form);
-
                   reservedKeywordsHandler(data);
                   populateForm(form_id, data);
+                  $('body').trigger('change');
+                  console.log('DEBUG: Form populated', form_id, data);
                 } else {
                   console.log('DEBUG: Advanced form submit success', data);
-                  populateForm(form_id, data);
-                  console.log('DEBUG: Form populated', form_id, data);
-
                   reservedKeywordsHandler(data);
+                  populateForm(form_id, data);
+                  $('body').trigger('change');
+                  console.log('DEBUG: Form populated', form_id, data);
                 }
               },
               error: (data) => {
@@ -137,50 +138,15 @@
                 $(`${elementType}#${fid}`).val(data[fid]);
                 break;
               case 'select':
-                if (advancedBtnClicked) {
-                  $(`${elementType}#${fid}`).html('');
-                  populateSelect($(`${elementType}#${fid}`), data[fid]);
-                } else {
-                  $(`${elementType}#${fid}`).val(data[fid]);
-                  $(`${elementType}#${fid}`).trigger('change');
-                }
+                createSelectFromOnloadData(element, data[fid]);
                 break;
               case 'radio':
-                if (advancedBtnClicked) {
-                  console.log('DEBUG: ad pop radio');
-                  populateRadioCheckbox($(`#${fid}`), elementType, data[fid]);
-                } else {
-                  $(`input[name="${fid}[]"][value="${data[fid]}"]`).trigger(
-                    'click'
-                  );
-                }
-                break;
               case 'checkbox':
-                if (advancedBtnClicked) {
-                  $(`#${fid} div.elementor-field-option`).each(function (d) {
-                    $(d).remove();
-                  });
-                  populateRadioCheckbox($(`#${fid}`), elementType, data[fid]);
-                } else {
-                  var checkboxes = $(`input[name="${fid}[]"]`);
-                  var checkboxName = checkboxes.length > 0 ? `${fid}[]` : fid;
-                  if (checkboxes.length > 0) {
-                    for (var i = 0; i < checkboxes.length; i++) {
-                      $(
-                        `input[name="${checkboxName}"][value="${data[fid][i]}"]`
-                      )
-                        .prop('checked', true)
-                        .trigger('change');
-                    }
-                  } else {
-                    $(`input[name="${checkboxName}"][value="${data[fid]}"]`)
-                      .prop('checked', true)
-                      .trigger('change');
-                  }
-                  $(`input[name="${checkboxName}"][value="${data[fid]}"]`)
-                    .prop('checked', true)
-                    .trigger('change');
-                }
+                createRadioCheckboxFromOnloadData(
+                  element,
+                  elementType,
+                  data[fid]
+                );
                 break;
               case 'table':
                 if (advancedBtnClicked) {
@@ -199,13 +165,14 @@
       widgets = $('[role=consist_widget'),
       conditinedElements = $('.has-conditioning'),
       elementorElement,
+      elementorElementClasses,
       consistForm,
       cFormVars,
       onload,
       onloadQuery = '';
 
     // Bind changes in form for the conditioning
-    $('body').on('change', 'input, select, textarea', function (e) {
+    $(document).on('change', 'body', function (e) {
       for (element of conditinedElements) {
         runConditions(element);
       }
@@ -215,12 +182,13 @@
     buttons.each((i, b) => {
       if ($(b).attr('op') !== 'submit') {
         $(b).on('click', function (e) {
+          var buttonOp = $(b).attr('op');
           submitterBtn = $(this);
-          if ($(b).attr('op') !== 'advanced') {
+          if (buttonOp !== 'advanced') {
             e.preventDefault();
           }
-          console.log(`DEBUG: ${$(this).attr('op').toUpperCase()} was clicked`);
-          switch ($(this).attr('op')) {
+          console.log(`DEBUG: ${buttonOp.toUpperCase()} was clicked`);
+          switch (buttonOp) {
             case 'reset':
               var form = $(this).closest('form'),
                 inputFields = $(form).find(':input:not([readonly], select)'),
@@ -305,8 +273,9 @@
         // Build the form's pseudo DOM elements
         $(f).text('');
         elementorElement = $(f).closest('.elementor-element');
+        elementorElementClasses = $(elementorElement).attr('class');
 
-        consistForm = `<form id="${cFormVars.form_id}" class="elementor-form-widget-wrap elementor-widget-container" method="post" action="${cFormVars.form_submit_url}" />`;
+        consistForm = `<form id="${cFormVars.form_id}" class="elementor-widget-wrap elementor-form-widget-wrap elementor-widget-container ${elementorElementClasses}" method="post" action="${cFormVars.form_submit_url}" />`;
 
         $(f)
           .closest('.elementor-container')
@@ -349,6 +318,7 @@
             contentType: 'application/json; charset=utf-8',
             success: (data) => {
               populateForm($(f).attr('id'), data);
+              $('body').trigger('change');
               console.log('DEBUG: Populate success', data);
               console.log(data['alert_message']);
               reservedKeywordsHandler(data);

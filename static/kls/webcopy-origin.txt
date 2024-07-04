@@ -10,67 +10,67 @@ Uri: https://blox-test.consist.co.il/feed/
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\feed\index.htm
 Content Type: application/rss+xml
 
-Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/css/cform.css?ver=0.1.4
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/css/cform.css?ver=0.1.13
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-consist-forms\assets\css\cform.css
 Content Type: text/css
 
-Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/css/loader.css?ver=0.1.4
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/css/loader.css?ver=0.1.13
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-consist-forms\assets\css\loader.css
 Content Type: text/css
 
-Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/js/cform-script.js?ver=0.1.4
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/js/cform-script.js?ver=0.1.13
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-consist-forms\assets\js\cform-script.js
 Content Type: application/javascript
 
-Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/js/jquery.validate.js?ver=0.1.4
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/js/jquery.validate.js?ver=0.1.13
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-consist-forms\assets\js\jquery.validate.js
 Content Type: application/javascript
 
-Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/js/loader.js?ver=0.1.4
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/js/loader.js?ver=0.1.13
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-consist-forms\assets\js\loader.js
 Content Type: application/javascript
 
-Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/js/localization/messages_he.js?ver=0.1.4
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/js/localization/messages_he.js?ver=0.1.13
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-consist-forms\assets\js\localization\messages_he.js
 Content Type: application/javascript
 
-Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/js/utils.js?ver=0.1.4
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-consist-forms/assets/js/utils.js?ver=0.1.13
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-consist-forms\assets\js\utils.js
 Content Type: application/javascript
 
-Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-pro/assets/css/frontend-lite-rtl.min.css?ver=3.21.2
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-pro/assets/css/frontend-lite-rtl.min.css?ver=3.22.1
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-pro\assets\css\frontend-lite-rtl.min.css
 Content Type: text/css
 
-Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.21.2
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.22.1
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-pro\assets\js\elements-handlers.min.js
 Content Type: application/javascript
 
-Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.21.2
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.22.1
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-pro\assets\js\frontend.min.js
 Content Type: application/javascript
 
-Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.21.2
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.22.1
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor-pro\assets\js\webpack-pro.runtime.min.js
 Content Type: application/javascript
 
-Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/css/frontend-lite-rtl.min.css?ver=3.21.5
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/css/frontend-lite-rtl.min.css?ver=3.22.3
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor\assets\css\frontend-lite-rtl.min.css
 Content Type: text/css
 
-Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.21.5
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.22.3
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor\assets\js\frontend-modules.min.js
 Content Type: application/javascript
 
-Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.21.5
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.22.3
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor\assets\js\frontend.min.js
 Content Type: application/javascript
 
-Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.21.5
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.22.3
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor\assets\js\webpack.runtime.min.js
 Content Type: application/javascript
 
-Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.29.0
+Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.30.0
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor\assets\lib\eicons\css\elementor-icons.min.css
 Content Type: text/css
 
@@ -82,27 +82,23 @@ Uri: https://blox-test.consist.co.il/wp-content/plugins/elementor/assets/lib/way
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\plugins\elementor\assets\lib\waypoints\waypoints.min.js
 Content Type: application/javascript
 
-Uri: https://blox-test.consist.co.il/wp-content/themes/astra/assets/css/minified/main.min-rtl.css?ver=4.6.14
+Uri: https://blox-test.consist.co.il/wp-content/themes/astra/assets/css/minified/main.min-rtl.css?ver=4.7.1
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\themes\astra\assets\css\minified\main.min-rtl.css
 Content Type: text/css
 
-Uri: https://blox-test.consist.co.il/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.6.14
+Uri: https://blox-test.consist.co.il/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.7.1
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\themes\astra\assets\js\minified\frontend.min.js
 Content Type: application/javascript
 
-Uri: https://blox-test.consist.co.il/wp-content/uploads/2024/05/doxi-black-e1715153960569.png
-File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\uploads\2024\05\doxi-black-e1715153960569.png
-Content Type: image/png
-
-Uri: https://blox-test.consist.co.il/wp-content/uploads/elementor/css/global.css?ver=1715268357
+Uri: https://blox-test.consist.co.il/wp-content/uploads/elementor/css/global.css?ver=1719662263
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\uploads\elementor\css\global.css
 Content Type: text/css
 
-Uri: https://blox-test.consist.co.il/wp-content/uploads/elementor/css/post-5174.css?ver=1716309300
+Uri: https://blox-test.consist.co.il/wp-content/uploads/elementor/css/post-5174.css?ver=1719737509
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\uploads\elementor\css\post-5174.css
 Content Type: text/css
 
-Uri: https://blox-test.consist.co.il/wp-content/uploads/elementor/css/post-6.css?ver=1715264894
+Uri: https://blox-test.consist.co.il/wp-content/uploads/elementor/css/post-6.css?ver=1719662262
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-content\uploads\elementor\css\post-6.css
 Content Type: text/css
 
@@ -154,7 +150,7 @@ Uri: https://blox-test.consist.co.il/wp-json/wp/v2/pages/5174
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\wp-json\wp\v2\pages\5174
 Content Type: application/json
 
-Uri: https://fonts.googleapis.com/css?family=Roboto:100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic|Roboto+Slab:100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=swap&subset=hebrew&ver=6.5.3
+Uri: https://fonts.googleapis.com/css?family=Roboto:100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic|Roboto+Slab:100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=swap&subset=hebrew&ver=6.5.5
 File Name: C:\Downloaded Web Sites\blox-test.consist.co.il\css
 Content Type: text/css
 

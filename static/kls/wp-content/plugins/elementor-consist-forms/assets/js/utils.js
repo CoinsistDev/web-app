@@ -375,16 +375,11 @@ var $ = jQuery,
             $(input).val(response[Object.keys(response)[0]]);
             break;
           case 'select':
-            var select = $(element).find('select');
-            $(select).html('');
-            populateSelect($(select), response);
-            if ($(element).data('default')) {
-              selectDefault(select, $(element).data('default'));
-            }
+            createSelectFromOnloadData(element, response);
             break;
           case 'radio':
           case 'checkbox':
-            populateRadioCheckbox(element, elementType, response);
+            createRadioCheckboxFromOnloadData(element, elementType, response);
             break;
           case 'table':
             var table = $(element).find('table');
@@ -408,18 +403,58 @@ var $ = jQuery,
       addRow(table, row);
     }
   },
-  populateSelect = function (select, selectData) {
-    for (var key in selectData) {
-      $(select).append(`<option value="${selectData[key]}">${key}</option>`);
-    }
-  },
-  populateRadioCheckbox = function (element, elementType, radioCheckboxData) {
-    console.log(
-      'DEBUG: populateRadioCheckbox',
-      $(element),
-      elementType,
-      radioCheckboxData
-    );
+  // populateSelect = (fid, data) => {
+  //   if ($(`select#${fid}`).attr('multiple')) {
+  //     data = (Array.isArray(data) ? data : [data]).map((e) => String(e));
+  //     var selectOptions = $(`select#${fid} > option`);
+  //     let selectOptionsValues = [];
+  //     for (var i = 0; i < selectOptions.length; i++) {
+  //       selectOptionsValues.push($(selectOptions[i]).attr('value'));
+  //     }
+  //     for (var i = 0; i < selectOptions.length; i++) {
+  //       if (data.includes($(selectOptions[i]).attr('value'))) {
+  //         $(selectOptions[i]).prop('selected', true);
+  //       } else {
+  //         $(selectOptions[i]).prop('selected', false);
+  //       }
+  //     }
+  //   } else {
+  //     data = String(data);
+  //     $(`select#${fid}`).val(data);
+  //   }
+  //   $(`select#${fid}`).trigger('change');
+  // },
+  // populateRadio = (fid, data) => {
+  //   // 1. Clear old values
+  //   $(`input[name="${fid}"]`).prop('checked', false).trigger('change');
+  //   // 2. Set new values
+  //   $(`input[name="${fid}[]"][value="${data[fid]}"]`).trigger('click');
+  // },
+  // populateCheckbox = (fid, data) => {
+  //   var checkboxes = $(`input[name="${fid}[]"]`);
+  //   var checkboxName = checkboxes.length > 0 ? `${fid}[]` : fid;
+  //   if (checkboxes.length > 0) {
+  //     // A checkbox with several options
+  //     // 1. Clear old values
+  //     $(`input[name="${checkboxName}"]`)
+  //       .prop('checked', false)
+  //       .trigger('change');
+  //     // 2. Set new values
+  //     for (var i = 0; i < checkboxes.length; i++) {
+  //       $(`input[name="${checkboxName}"][value="${data[fid][i]}"]`)
+  //         .prop('checked', true)
+  //         .trigger('change');
+  //     }
+  //   } else {
+  //     $(`input[name="${checkboxName}"][value="${data[fid]}"]`)
+  //       .prop('checked', true)
+  //       .trigger('change');
+  //   }
+  //   $(`input[name="${checkboxName}"][value="${data[fid]}"]`)
+  //     .prop('checked', true)
+  //     .trigger('change');
+  // },
+  createRadioCheckboxFromOnloadData = (element, elementType, data) => {
     var label = $(element).children().first('label');
     var inputLabelClassTypography =
       $(element).data('typography') === 'custom'
@@ -436,10 +471,9 @@ var $ = jQuery,
     id = $(element).attr('id');
     i = 0;
     let option;
-    for (var key in radioCheckboxData) {
-      console.log(key, radioCheckboxData[key]);
+    for (var key in data) {
       option = `<div class="elementor-field-option elementor-size-sm" style="margin:0 5px;">
-        <input type="${elementType}" value="${radioCheckboxData[key]}" id="${id}-${i}" name="${id}[]"></input>
+        <input type="${elementType}" value="${data[key]}" id="${id}-${i}" name="${id}[]"></input>
         <label for="${id}-${i}" ${inputLabelClassTypography}>${key}</label>
         </div>`;
       if (inlineWrapper.length) {
@@ -448,6 +482,21 @@ var $ = jQuery,
         $(element).append(option);
       }
       i++;
+    }
+  },
+  createSelectFromOnloadData = (element, data) => {
+    // clear old options
+    var select = $(element).find('select'),
+      defaultValue = $(element).data('default'),
+      valuesArray = [];
+    $(select).html('');
+    // Build options from data
+    for (var key in data) {
+      $(select).append(`<option value="${data[key]}">${key}</option>`);
+      valuesArray.push(data[key]);
+    }
+    if (valuesArray.includes(defaultValue)) {
+      $(select).val(defaultValue).trigger('change');
     }
   },
   evaluateConditionString = async function (str, form) {
@@ -520,21 +569,23 @@ var $ = jQuery,
     var conditionType = $(element).data('condition-type');
     var condition = $(element).data('condition');
     var form = $(element).parents('form');
-    switch (conditionType) {
-      case 'show':
-        if (await evaluateConditionString(condition, form)) {
-          $(element).show();
-        } else {
-          $(element).hide();
-        }
-        break;
-      case 'hide':
-        if (await evaluateConditionString(condition, form)) {
-          $(element).hide();
-        } else {
-          $(element).show();
-        }
-        break;
+    if (condition) {
+      switch (conditionType) {
+        case 'show':
+          if (await evaluateConditionString(condition, form)) {
+            $(element).show();
+          } else {
+            $(element).hide();
+          }
+          break;
+        case 'hide':
+          if (await evaluateConditionString(condition, form)) {
+            $(element).hide();
+          } else {
+            $(element).show();
+          }
+          break;
+      }
     }
   };
 
