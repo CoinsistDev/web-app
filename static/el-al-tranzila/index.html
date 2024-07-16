@@ -1,94 +1,129 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Form</title>
-<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet" />
-<link href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" rel="stylesheet" >
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-<script src="./scripts/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"> </script>  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-<script src="https://cdn.glassix.com/clients/embedded-app-iframe.js"></script>
-<link href="./scripts/main.css" rel="stylesheet" >
-<script src="./scripts/mainTranzila.js"></script>
-
-</head>
-<body>
-   
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet" />
+        <link href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtJ3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script src="./scripts/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <script src="https://cdn.glassix.com/clients/embedded-app-iframe.js"></script>
+        <link href="./scripts/main.css" rel="stylesheet" />
+        <script src="./scripts/mainTranzila.js"></script>
+    </head>
+    <body>
         <div class="cloud x2"></div>
         <div class="cloud x3"></div>
-        <!-- Time for multiple clouds to dance around -->
-  
-    
-    <div class="content clouds">
-    <div id="login">
-        <div class="container">           
-            <div id="login-row" class="row justify-content-center align-items-center">
-                <div id="Iframe-column" class="col-md-6">   
-                    <div><img src="./images/logoELAL.png"></div>
-                    <div id="iframe1">
-                        <div class="row">
-                            <div class="form-group col-12">
-                                <div class="checkbox">
-                                    <br><a href="https://www.elal.com/heb/legal/ticket-cancellation" target="_blank" style="margin-right: -22px;"> מעבר לתקנון - חוק הגנת הצרכן</a><br>
-                                    <label>
-                                        <input type="checkbox" data-toggle="toggle" data-style="ios" id="approve" data-on="" data-off="">
-                                        אני מאשר/ת כי קראתי את התקנון
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group" style="text-align: center;">
-                                <input type="button" name="submit" class="btn btn-info btn-lg" value="אישור" id="submitbtn" >
-                            </div>
-                        </div>
-                    </div>            
-                    <form id="creatTicketForm" class="form" action="" method="post">
-                            <div>
-                                <h3>מערכת לסליקת אשראי</h3>
-                                <h4><span>העמוד יפוג תוקף בעוד </span><span id="time"></span><span> דקות</span></h4>
-                            </div>
-                            <div class="IframeT">
-                                <div class="row">
-                                    <div class="iframeInfoB4">
-                                        <div class="iframeInfoB4Text">שם לקוח: <span class="textClientName"></span></div>
-                                        <div class="iframeInfoB4Text">מספר PNR: <div class="textPNR"></div></div>
-                                        <div class="iframeInfoB4Text">מטבע: <span class="textCoin"></span></div>
-                                        <div class="iframeInfoB4Text">סכום: <span class="textSum"></span></div>
-                                    </div>
-                                </div>
+
+        <div class="content clouds">
+            <div id="login">
+                <div class="container">
+                    <div id="login-row" class="row justify-content-center align-items-center">
+                        <div id="Iframe-column" class="col-md-6">
+                            <div><img src="./images/logoELAL.png" /></div>
+                            <div id="iframe1">
                                 <div class="row">
                                     <div class="form-group col-12">
-                                        <iframe id="iframeTrzanzila" src = "https://direct.tranzila.com/consistelal/iframenew.php?sum=0.1&currency=1&cred_type=1&tranmode=V&lang=il&hidesum=1&ticketId"></iframe>
+                                        <div class="checkbox">
+                                            <br /><a href="https://www.elal.com/heb/legal/ticket-cancellation" target="_blank" style="margin-right: -22px"> מעבר לתקנון - חוק הגנת הצרכן</a><br />
+                                            <label>
+                                                <input type="checkbox" data-toggle="toggle" data-style="ios" id="approve" data-on="" data-off="" />
+                                                אני מאשר/ת כי קראתי את התקנון
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group" style="text-align: center">
+                                        <input type="button" name="submit" class="btn btn-info btn-lg" value="אישור" id="submitbtn" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="row noIframeT">
-                                <div class="form-group col-12" style="text-align:center;margin:auto">הדף כבר לא זמין, אנא פנה שוב לנציג</div>
+                            <form id="creatTicketForm" class="form" action="" method="post">
+                                <div class="hebrew-form">
+                                    <div>
+                                        <h3>מערכת לסליקת אשראי</h3>
+                                        <h4><span>העמוד יפוג תוקף בעוד </span><span id="time"></span><span> דקות</span></h4>
+                                    </div>
+                                    <div class="IframeT">
+                                        <div class="row">
+                                            <div class="iframeInfoB4">
+                                                <div class="iframeInfoB4Text">שם לקוח: <span class="textClientName"></span></div>
+                                                <div class="iframeInfoB4Text">
+                                                    מספר PNR:
+                                                    <div class="textPNR"></div>
+                                                </div>
+                                                <div class="iframeInfoB4Text">
+                                                    מספר משלם:
+                                                    <div class="textPaymentName"></div>
+                                                </div>
+                                                <div class="iframeInfoB4Text">מטבע: <span class="textCoin"></span></div>
+                                                <div class="iframeInfoB4Text">סכום: <span class="textSum"></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-12">
+                                                <iframe id="iframeTrzanzila" src="https://direct.tranzila.com/consistelal/iframenew.php?sum=0.1&currency=1&cred_type=1&tranmode=V&lang=il&hidesum=1&ticketId"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row noIframeT">
+                                        <div class="form-group col-12" style="text-align: center; margin: auto">הדף כבר לא זמין, אנא פנה שוב לנציג</div>
+                                    </div>
+                                </div>
+                                <div class="english-form" style="display: none">
+                                    <div>
+                                        <h3>Credit Card Payment System</h3>
+                                        <h4><span>The page will expire in </span><span id="time-en"></span><span> minutes</span></h4>
+                                    </div>
+                                    <div class="IframeT">
+                                        <div class="row">
+                                            <div class="iframeInfoB4">
+                                                <div class="iframeInfoB4Text">Client Name: <span class="textClientName"></span></div>
+                                                <div class="iframeInfoB4Text">
+                                                    PNR Number:
+                                                    <div class="textPNR"></div>
+                                                </div>
+                                                <div class="iframeInfoB4Text">
+                                                    Payment Number:
+                                                    <div class="textPaymentName"></div>
+                                                </div>
+                                                <div class="iframeInfoB4Text">Currency: <span class="textCoin"></span></div>
+                                                <div class="iframeInfoB4Text">Amount: <span class="textSum"></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-12">
+                                                <iframe id="iframeTrzanzila-en" src="https://direct.tranzila.com/consistelal/iframenew.php?sum=0.1&currency=1&cred_type=1&tranmode=V&lang=en&hidesum=1&ticketId"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row noIframeT">
+                                        <div class="form-group col-12" style="text-align: center; margin: auto">The page is no longer available, please contact the representative again.</div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="footerClass">
+                                טלפון - 039771111<br />
+                                מחלקת קשרי לקוחות, אל על נתיבי אוויר לישראל בע"מ
+                                <br />משרד ראשי, נתב"ג ת.ד. 41 מיקוד 7015001 <br /><a href="https://www.elal.com/heb/legal/ticket-cancellation" target="_blank"> מעבר לתקנון - חוק הגנת הצרכן</a>
                             </div>
-                           
-                    </form>
-                    <div id="footerClass">טלפון - 039771111<br>
-                        מחלקת קשרי לקוחות, אל על נתיבי אוויר לישראל בע"מ
-                        <br>משרד ראשי, נתב"ג ת.ד. 41 מיקוד 7015001
-                        <br><a href="https://www.elal.com/heb/legal/ticket-cancellation" target="_blank"> מעבר לתקנון - חוק הגנת הצרכן</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-</body>
+    </body>
 </html>
