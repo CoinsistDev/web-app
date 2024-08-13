@@ -23,6 +23,7 @@
         <link href="./scripts/main.css" rel="stylesheet" />
         <script src="./scripts/mainTranzila.js"></script>
         <script>
+            const token = "%%TOKEN_PLACEHOLDER%%";
             const NODE_ENV = "%%NODE_ENV%%";
         </script>
     </head>
@@ -68,12 +69,12 @@
                                                     מספר PNR:
                                                     <div class="textPNR"></div>
                                                 </div>
-                                                <div class="iframeInfoB4Text">
-                                                    מספר משלם:
-                                                    <div class="textPaymentName"></div>
-                                                </div>
                                                 <div class="iframeInfoB4Text">מטבע: <span class="textCoin"></span></div>
                                                 <div class="iframeInfoB4Text">סכום: <span class="textSum"></span></div>
+                                                <div class="iframeInfoB4Text">
+                                                    שם בעל הכרטיס:
+                                                    <input type="text" class="textPaymentName form-control" required />
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -99,12 +100,12 @@
                                                     PNR Number:
                                                     <div class="textPNR"></div>
                                                 </div>
-                                                <div class="iframeInfoB4Text">
-                                                    Payment Name:
-                                                    <div class="textPaymentName"></div>
-                                                </div>
                                                 <div class="iframeInfoB4Text">Currency: <span class="textCoin"></span></div>
                                                 <div class="iframeInfoB4Text">Amount: <span class="textSum"></span></div>
+                                                <div class="iframeInfoB4Text">
+                                                    Name of payer:
+                                                    <input type="text" class="textPaymentName form-control" required />
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="row">

@@ -69,17 +69,26 @@ $(document).ready(function () {
     };
 
     const handleApiResponse = (data) => {
-        const { clientName, PNR, currency, sum, userName, departmentId, expiration, ticketId, paymentName, language } = data;
+        const { clientName, PNR, currency, sum, userName, departmentId, expiration, ticketId, language } = data;
         const tranzilaLang = language === "en" ? "us" : "il";
-        const src = `https://direct.tranzila.com/consistelal/iframenew.php?nologo=1&clientName=${clientName}&PNR=${PNR}&expiration=${expiration}&userName=${userName}&sum=1&currency=${currency}&cred_type=1&tranmode=VK&lang=${tranzilaLang}&ticketId=${ticketId}&departmentId=${departmentId}&tahles=${sum}&hidesum=1`;
-        $("#iframeTrzanzila").prop("src", src);
-        $("#iframeTrzanzila-en").prop("src", src);
+
+        // Update the src dynamically when the input value changes
+        const updateIframeSrc = () => {
+            const textPaymentName = encodeURIComponent($(".textPaymentName").val());
+            const src = `https://direct.tranzila.com/consistelal/iframenew.php?nologo=1&clientName=${clientName}&PNR=${PNR}&expiration=${expiration}&userName=${userName}&sum=1&currency=${currency}&cred_type=1&tranmode=VK&lang=${tranzilaLang}&ticketId=${ticketId}&departmentId=${departmentId}&tahles=${sum}&hidesum=1&textPaymentName=${textPaymentName}`;
+            console.log(src);
+            $("#iframeTrzanzila").prop("src", src);
+            $("#iframeTrzanzila-en").prop("src", src);
+        };
+
+        $(".textPaymentName").on("input", updateIframeSrc);
+        updateIframeSrc();
+
         $(".noIframeT").hide();
         $(".textClientName").text(clientName);
         $(".textPNR").text(PNR);
         $(".textCoin").text(getCurrency(currency, language));
         $(".textSum").text(sum);
-        $(".textPaymentName").text(paymentName);
 
         if (language === "en") {
             $(".hebrew-form").hide();
