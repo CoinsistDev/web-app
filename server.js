@@ -17,6 +17,7 @@ app.use(express.json());
 app.use(express.static("./static"));
 
 app.get("/el-al", (req, res) => res.sendFile(path.join(__dirname, "static", "el-al", "index.html")));
+pp.get("/el-al-referral", (req, res) => res.sendFile(path.join(__dirname, "static", "el-al-referral", "index.html")));
 // app.get("/el-al-tranzila/*", (req, res) => res.sendFile(path.join(__dirname, "static", "el-al-tranzila", "index.html")));
 app.get("/blue", (req, res) => res.sendFile(path.join(__dirname, "static", "blue", "index.html")));
 app.get("/beauty-care", (req, res) => res.sendFile(path.join(__dirname, "static", "beauty-care", "form.html")));
