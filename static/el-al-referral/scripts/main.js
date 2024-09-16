@@ -118,6 +118,7 @@ $(document).ready(async function(){
         $('#ffDiv').show();
     } else {
         // Hide ffDiv if unchecked (No)
+        $('#flyerClub').val('');
         $('#ffDiv').hide();
     }
 });
@@ -127,6 +128,7 @@ $('#hasticketNumber').change(function () {
       $('#tnDiv').show();
   } else {
       // Hide ffDiv if unchecked (No)
+      $('#ticketNumber').val('');
       $('#tnDiv').hide();
   }
 });
@@ -136,6 +138,7 @@ $('#hasbookingCode').change(function () {
       $('#bcDiv').show();
   } else {
       // Hide ffDiv if unchecked (No)
+      $('#bookingCode').val('');
       $('#bcDiv').hide();
   }
 });
@@ -332,9 +335,10 @@ $('#submitbtn').click(function () {
   // Final validation result
   if (isValid) {
         try{
-            $('.loader').css("display","display")
+            $('.loader').css("display","block")
             const ticketId = getUrlParameter('ticketId')
             const departmetId = "865a9c18-901f-4757-b7f2-f2aa9fa2c87a"
+            //const departmetId = "9684118e-1db2-4c7d-b03b-c2e5a796ff6a"
             const data = { 
                 ticketId : ticketId || "", 
                 departmetId : departmetId || "",
@@ -346,6 +350,7 @@ $('#submitbtn').click(function () {
                 ticketNumber : $('#ticketNumber').val() || "", 
                 bookingCode : $('#bookingCode').val() || ""
             }
+            //url: `https://glas.consist.co.il/ELAL-Form/api/tickets/updateTicket`,
             $.ajax({
                 url: `https://glas.consist.co.il/ELAL-Form/api/tickets/updateTicket`,
                 type: 'post',
